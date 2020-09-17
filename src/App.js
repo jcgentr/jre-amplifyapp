@@ -1,16 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Hello from V2!
-        </h1>
-      </header>
+      <div className="sidebar">
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+        <button className="epLink">#1536 - Edward Snowden</button>
+      </div>
+      <div className="transcriptContainer">
+        <iframe 
+          title="p1536"
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/_Rl82OQDoOc" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   );
 }
