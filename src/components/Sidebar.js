@@ -1,16 +1,20 @@
 import React from 'react'
 
-const Sidebar = () => {
+import SidebarButton from './SidebarButton'
+
+import transcriptsMetaData from '../static/transcriptsMetaData'
+
+const Sidebar = ({ podcast, setPodcast }) => {
   return (
     <div className="sidebar">
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
-      <button className="epLink">#1536 - Edward Snowden</button>
+      {transcriptsMetaData.map((transcript) => 
+        <SidebarButton 
+          name={transcript.name} 
+          isSelected={podcast === transcript.podcastNumber} 
+          podcastNumber={transcript.podcastNumber}
+          setPodcast={setPodcast} 
+        />
+      )}
     </div>
   )
 }

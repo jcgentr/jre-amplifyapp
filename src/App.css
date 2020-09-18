@@ -16,6 +16,10 @@ button {
  	outline: none !important;
 }
 
+.selected {
+	background-color: red !important;
+}
+
 .epLink {
 	font-size: calc(10px + 1vmin);
 	text-align: center;
@@ -29,7 +33,7 @@ button {
 }
 
 .epLink:hover {
-	background-color: red;
+	background-color: rgb(128, 45, 45);
 	cursor: pointer;
 }
 
